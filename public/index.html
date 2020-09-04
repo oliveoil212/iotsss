@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=divice-width, initial-scale=1.0">
+    <title>Weathe APP</title>
+    <link href="style.css" rel="stylesheet">
+    <script defer type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBbSjHd-PlrW_b6Ldt836eLr28jdvY36FA&callback=initMap">
+</script>
+    <script defer src="script.js"></script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class=" header">
+            <div class="icon-container">
+                <canvas id="icon" width="100" height="100"></canvas>
+            </div>
+        </div>
+        <div class="content">
+            <div class="general-information"> 
+                <div class="status">ENter a location</div>
+                <div class="location">TO find the weather</div>
+            </div>
+            <div class="detail">
+                <div class="detail-section">
+                    <div class="title">wind</div>
+                    <div class="vlaue"></div>
+                </div>
+                <div class="detail-section">
+                    <div class="title">temparature</div>
+                    <div class="vlaue"></div>
+                </div>
+                <div class="detail-section">
+                    <div class="title">precitsf</div>
+                    <div class="vlaue"></div>
+                </div>
+            </div> 
+            <div class="city-search-container">
+                <input  data-city-secrch type="text" class="city-search"   placeholder="Enter location">
+            </div>
+        </div>      
+    </div>
+    <a href="https://darksky.net/poweredby" class="darksky-logo">Powered by Darksky</a>
+</body>
